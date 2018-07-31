@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yinlib.service">
+
+    <application
+        android:enabled="true"
+        android:allowBackup="true">
+        <service
+            android:name="com.yinlib.service.RemoteService"
+            android:exported="true"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.yinlib.service.remoteservice"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
